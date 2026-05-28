@@ -1,69 +1,130 @@
-# Prerequisites
-*.d
+.DS_Store
+Thumbs.db
+Desktop.ini
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+*.orig
 
-# Precompiled Headers
-*.gch
-*.pch
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
 
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 
-# Fortran module files
-*.mod
-*.smod
+.env
+.env.*
+!.env.example
+!.env.*.example
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+deploy/env/*.env
+deploy/env/*.local
+!deploy/env/*.example
 
-# Executables
-*.exe
-*.out
-*.app
 
-# Build directories
+node_modules/
+**/node_modules/
+
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+frontend/coverage/
+frontend/.nyc_output/
+
+.pnpm-store/
+.yarn/
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+_build/
 build/
 Build/
 build-*/
+cmake-build-*/
+**/_build/
+**/build/
+**/Build/
+**/build-*/
+**/cmake-build-*/
 
-# CMake generated files
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
+CTestTestfile.cmake
+DartConfiguration.tcl
 Makefile
 install_manifest.txt
 compile_commands.json
+**/compile_commands.json
 
-# Temporary files
-*.tmp
-*.log
-*.bak
-*.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
+*.d
+*.o
+*.obj
+*.lo
+*.slo
+*.gch
+*.pch
 *.dwo
 
-# test output & cache
+*.a
+*.lib
+*.la
+*.lai
+*.so
+*.so.*
+*.dylib
+*.dll
+
+*.exe
+*.out
+*.app
+*.ilk
+*.pdb
+
 Testing/
+**/Testing/
+
+backend/**/uploads/*
+!backend/**/uploads/.gitkeep
+
+vcpkg_installed/
+**/vcpkg_installed/
+
+.docker/
+docker-data/
+*.pid
+
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.dump
+*.sql.gz
+*.backup
+
+
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+
 .cache/
+**/.cache/
+coverage/
